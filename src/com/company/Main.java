@@ -1,8 +1,6 @@
 package com.company;
 
 
-import java.util.*;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -38,7 +36,7 @@ public class Main {
         while (!stack.isEmpty()){
             System.out.println(stack.pop());
         }*/
-
+/*
         MyQueue<Integer> queue = new MyQueue<Integer>();
         queue.add(1001);
         queue.add(1002);
@@ -78,8 +76,23 @@ public class Main {
         while (it.hasNext()){
             Map.Entry mp = (Map.Entry)it.next();
             System.out.println(mp.getKey() + " -> " + mp.getValue());
-        }
+        }// remove this class :)
+*/
 
+        MyLinkedList<String> linkedList = new MyLinkedList<String>();
+        linkedList.add("1001");
+        linkedList.add("1002");
+        linkedList.add("1003");
+        linkedList.add("1004");
+        linkedList.add("1005");
+
+        System.out.println(linkedList.toString());
+        //System.out.println(linkedList.search(100));
+
+        System.out.println(linkedList.search("1004"));
+        if(linkedList.search("1005")) {
+            System.out.println("found");
+        }
     }
 }
 
