@@ -47,7 +47,7 @@ public class MyLinkedList<T> {
             _node = _nodeStart;
 
             while (_node != null){
-                if(_node.compareTo(_value) > 0) {
+                if(_node.compareTo(_value)) {
                     return true;
                 }
 
@@ -60,7 +60,7 @@ public class MyLinkedList<T> {
 
 }
 
-class Node<T> implements Comparable<T> {
+class Node<T> {
     protected T value;
     protected Node<T> link;
 
@@ -90,12 +90,8 @@ class Node<T> implements Comparable<T> {
         this.link = _link;
     }
 
-    public int compareTo(T _value){
-        if (this.value == _value){
-            return 1;
-        }
-
-        return 0;
+    public boolean compareTo(T _value){
+        return this.value.equals(_value);
     }
 }
 

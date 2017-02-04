@@ -79,18 +79,18 @@ public class Main {
         }// remove this class :)
 */
 
-        MyLinkedList<String> linkedList = new MyLinkedList<String>();
-        linkedList.add("1001");
-        linkedList.add("1002");
-        linkedList.add("1003");
-        linkedList.add("1004");
-        linkedList.add("1005");
+        MyLinkedList<Integer> linkedList = new MyLinkedList<Integer>();
+        linkedList.add(1001);
+        linkedList.add(1002);
+        linkedList.add(1003);
+        linkedList.add(1004);
+        linkedList.add(1005);
 
         System.out.println(linkedList.toString());
         //System.out.println(linkedList.search(100));
 
-        System.out.println(linkedList.search("1004"));
-        if(linkedList.search("1005")) {
+        System.out.println(linkedList.search(1004));
+        if(linkedList.search(1005)) {
             System.out.println("found");
         }
     }
